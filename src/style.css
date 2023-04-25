@@ -1,4 +1,41 @@
-html, body {
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:'Hanalei Fill', Hanal, monospace;  
+} 
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 25px 25px;
+}
+
+.nav-logo {
+    width: 40px;
+}
+
+.nav-name {
     margin: 0;
-    padding: 0;
+    margin-right: auto;
+    color: black;
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    letter-spacing: -1px;
+    margin-right: 70px;
+}
+
+.nav-items > li {
+    padding: 10px;
 }
