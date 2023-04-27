@@ -9,9 +9,8 @@ export default function Header() {
                 <h3 className="nav-name">Name</h3>
                 <ul className="nav-items">
                     <li>Home</li>
+                    <li>Product</li>
                     <li>About us</li>
-                    <li>How it works</li>
-                    <li>FAQs</li>
                 </ul>
             </nav>
         </header>
