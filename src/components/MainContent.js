@@ -13,7 +13,21 @@ export default function MainContent() {
                 <div class="grid-item item3">
                     <img src={headerLogo} className="grid-item img"></img>
                 </div>  
-                <div class="grid-item item4">Easy feedback ahead</div>
+                <div class="grid-item item4">
+                    <form className="form">
+                        <input 
+                            type="text"
+                            placeholder="Enter your email"
+                            className="form--input"
+                        />
+                        <button
+                            className="form--button"
+                            //</div>onClick={submitEmail}
+                        >
+                            Submit
+                        </button>
+                    </form>
+                </div>
                 <div class="grid-item item5">We will let you know when product advances</div>
 
             </div>
