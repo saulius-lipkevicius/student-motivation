@@ -3,6 +3,7 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
+    NavLink,
   } from "react-router-dom";
 
 import Home from '../pages/Home'
