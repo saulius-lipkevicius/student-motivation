@@ -12,6 +12,7 @@ function Product() {
             <LanguageTopHeader selected={selected} setSelected={setSelected}/>
             <Header />
             <ProductUserInput />
+            /* implement openAI API here */
         </div>
     )
 }
