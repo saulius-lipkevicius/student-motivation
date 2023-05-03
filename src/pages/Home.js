@@ -3,6 +3,7 @@ import LanguageTopHeader from "../components/LanguageTopHeader"
 import Header from "../components/Header"
 import MainContent from "../components/MainContent"
 import Button from '@mui/material/Button';
+import NavBar from "../components/NavBar";
 
 
 function Home() {
@@ -11,7 +12,7 @@ function Home() {
     return (
             <div>
                 <LanguageTopHeader selected={selected} setSelected={setSelected}/>
-                <Header />
+                <NavBar />
                 <MainContent />
                 <Button variant="contained">Contained</Button>
             </div>

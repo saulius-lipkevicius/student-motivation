@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import LanguageTopHeader from "../components/LanguageTopHeader"
 import Header from "../components/Header"
 import MainContent from "../components/MainContent"
+import NavBar from "../components/NavBar";
+
 
 function About() {
     const [selected, setSelected] = useState("English")
@@ -9,7 +11,7 @@ function About() {
     return (
         <div>
             <LanguageTopHeader selected={selected} setSelected={setSelected}/>
-            <Header />
+            <NavBar />
             
         </div>
     )
