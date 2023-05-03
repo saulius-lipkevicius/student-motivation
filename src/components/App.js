@@ -9,11 +9,20 @@ import {
 import Home from '../pages/Home'
 import Product from '../pages/Product'
 import About from '../pages/About'
+import NavBar from "./NavBar";
 
 function App() {
     const [selected, setSelected] = useState("English")
 
     return (
+        <div>
+            <h1>hello</h1>
+            <NavBar />
+        </div>
+        
+        
+        /*
+
         <Router>
             <Routes>
                 <Route path="/" element={<Home/>} />
@@ -21,6 +30,7 @@ function App() {
                 <Route path="/about" element={<About/>}/>
             </Routes>
         </Router>
+        */
     )
 }
 
