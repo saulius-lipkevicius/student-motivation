@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import LanguageTopHeader from "../components/LanguageTopHeader"
-import Header from "../components/Header"
 import MainContent from "../components/MainContent"
 import NavBar from "../components/NavBar";
+import AboutBody from "../components/AboutBody"
 
 
 function About() {
@@ -12,7 +12,7 @@ function About() {
         <div>
             <LanguageTopHeader selected={selected} setSelected={setSelected}/>
             <NavBar />
-            
+            <AboutBody/>
         </div>
     )
 }

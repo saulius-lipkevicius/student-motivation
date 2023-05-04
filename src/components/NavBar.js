@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import styles from "./NavBarStyles.css"
+import styles from "../css/NavBarStyles.css"
 import { Link } from "react-router-dom";
 
 

@@ -1,0 +1,127 @@
+.about {
+    padding: 5rem 3rem 3rem 3rem;
+    background: #f8f8f8;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row .column {
+    width: 40%;
+}
+
+.column .tabs {
+    display: flex;
+}
+
+.single-tab {
+    background: white;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.single-tab h2 {
+    display: block;
+    padding: 10px 16px;
+    
+    color: #3c3c3c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.single-tab-active {
+    border-radius: 4px;
+    margin-right: 10px;
+    background: #18dcff;
+    position: relative;
+}
+
+.single-tab-active::before {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #18dcff transparent transparent transparent;
+}
+
+.single-tab-active h2 {
+    display: block;
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.about-img {
+    position: relative;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 100%;
+}
+
+.content {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.content h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    padding-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #999;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    .about {
+        padding: 2rem 1rem 3rem 1rem;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-img {
+        height: 500px;
+    }
+
+    .row .column {
+        width: 100%;
+    }
+
+    .tabs {
+        padding-top: 3rem;
+    }
+
+}
