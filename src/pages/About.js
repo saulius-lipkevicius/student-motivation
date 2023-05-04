@@ -11,7 +11,9 @@ function About() {
     return (
         <div>
             <LanguageTopHeader selected={selected} setSelected={setSelected}/>
-            <NavBar />
+            <NavBar 
+                navLocation={3}
+            />
             <AboutBody/>
         </div>
     )

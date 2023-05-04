@@ -10,7 +10,9 @@ function Product() {
     return (
         <div>
             <LanguageTopHeader selected={selected} setSelected={setSelected}/>
-            <NavBar />
+            <NavBar 
+                navLocation={2}
+            />
             <ProductUserInput />
             /* implement openAI API here */
         </div>

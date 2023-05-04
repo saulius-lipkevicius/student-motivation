@@ -3,7 +3,7 @@ import styles from "../css/About.css"
 import mainImage from "../images/about_image.jpeg"
 
 function AboutBody() {
-    const [ toggleTab, setToggleTab ] = useState()
+    const [ toggleTab, setToggleTab ] = useState(1)
 
     return (
         <Fragment>

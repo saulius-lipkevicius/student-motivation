@@ -10,7 +10,9 @@ function Home() {
     return (
             <div>
                 <LanguageTopHeader selected={selected} setSelected={setSelected}/>
-                <NavBar />
+                <NavBar 
+                    navLocation={1}
+                />
                 <MainContent />
             </div>
     )
