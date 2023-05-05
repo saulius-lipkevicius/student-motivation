@@ -14,7 +14,7 @@ function Product() {
                 navLocation={2}
             />
             <ProductUserInput />
-            /* implement openAI API here */
+            
         </div>
     )
 }

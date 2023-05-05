@@ -1,0 +1,64 @@
+.create {
+    padding: 2rem 1rem 1rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.create label {
+    text-align: left;
+    display: block;
+    margin-top: 1rem;
+    color: rgb(71, 103, 136);
+}
+
+.create h2 {
+    font-size: 24px;
+    color: rgb(11, 53, 88);
+    margin-bottom: 30px;
+}
+
+.create input {
+    width: 100%;
+    padding: 6px 10px;
+    min-height: 40px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: transparent;
+    display: block;
+} 
+
+.create select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    color: rgb(71, 103, 136);
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: transparent;
+    display: block;
+} 
+
+.create textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background: transparent;
+    display: block;
+}
+
+.create button {
+    background: rgb(71, 103, 136);
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
