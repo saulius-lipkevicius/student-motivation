@@ -9,12 +9,12 @@
     text-align: left;
     display: block;
     margin-top: 1rem;
-    color: rgb(71, 103, 136);
+    color: #323232;
 }
 
 .create h2 {
     font-size: 24px;
-    color: rgb(11, 53, 88);
+    color: #323232;
     margin-bottom: 30px;
 }
 
@@ -30,17 +30,27 @@
     display: block;
 } 
 
+.create select:focus {
+    outline: none !important;
+    border: 2px solid #323232;
+}
+
 .create select {
     width: 100%;
     padding: 6px 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
-    color: rgb(71, 103, 136);
+    color: #323232;
     box-sizing: border-box;
     border-radius: 6px;
     background: transparent;
     display: block;
 } 
+
+.create input:focus {
+    outline: none !important;
+    border: 2px solid #323232;
+}
 
 .create textarea {
     width: 100%;
@@ -54,8 +64,14 @@
     display: block;
 }
 
+.create textarea:focus {
+    outline: none !important;
+    border: 2px solid #323232;
+}
+
 .create button {
-    background: rgb(71, 103, 136);
+    width: 100px;
+    background: #323232;
     color: #fff;
     border: 0;
     padding: 8px;
