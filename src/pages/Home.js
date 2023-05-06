@@ -6,10 +6,9 @@ import NavBar from "../components/NavBar";
 
 function Home() {
     const [selected, setSelected] = useState("English")
-
+    // <LanguageTopHeader selected={selected} setSelected={setSelected}/>
     return (
             <div>
-                <LanguageTopHeader selected={selected} setSelected={setSelected}/>
                 <NavBar 
                     navLocation={1}
                 />

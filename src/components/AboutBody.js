@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import styles from "../css/About.css"
-import mainImage from "../images/about_image.jpeg"
+import mainImage from "../images/about-1.jpg"
 
 function AboutBody() {
     const [ toggleTab, setToggleTab ] = useState(1)
@@ -10,11 +10,11 @@ function AboutBody() {
             <section className='about'>
                 <div className='row'>
                     <div className='column'>
-                        <div className='about-img'>
-                            <img src={mainImage}></img>
+                        <div className='about-img-div'>
+                            <img src={mainImage} className='about-img'></img>
                         </div>
                     </div>
-                    <div className='column'>
+                    <div className='column2'>
 
                         <div className='tabs'>
                             <div className={toggleTab === 1 ? 'single-tab-active' : 'single-tab'} onClick={ () => setToggleTab(1)}>                
@@ -45,7 +45,7 @@ function AboutBody() {
                         <div className='tab-content'>
                             <div className={toggleTab === 3 ? 'content active' : 'content'} onClick={ () => setToggleTab(3)}>
                                 <h2>title3</h2>
-                                <p>lorem30 asd   asdasdafd asccafgnhgnmghujkmj </p>
+                                <p>lorem30 asd   asdasdafd asccafgnhgnmghujkmj lorem30 asd  </p>
                             </div>
                         </div>
 

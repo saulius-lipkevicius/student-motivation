@@ -2,9 +2,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1b2430;
-    padding: 20px 80px;
+    background: #323232;
+    padding: 5px 60px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 0px;
   }
   #navbar {
     display: flex;
@@ -12,6 +13,11 @@ nav {
     justify-content: center;
   }
   
+  #logo-img {
+    width: 54px;
+    height: 54px;
+  }
+
   #navbar li {
     list-style: none;
     padding: 0 20px;
@@ -27,7 +33,7 @@ nav {
   }
   #navbar li a:hover,
   #navbar li a.active {
-    color: #17cf97;
+    color: #DDD0C8;
   }
   
   #navbar li a:hover::after,
@@ -35,7 +41,7 @@ nav {
     content: "";
     width: 30%;
     height: 2px;
-    background: #17cf97;
+    background: #DDD0C8;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -57,7 +63,7 @@ nav {
       align-items: flex-start;
       justify-content: flex-start;
       position: fixed;
-      top: 79px;
+      top: 98px;
       right: -300px;
       width: 300px;
       height: 100vh;
@@ -65,10 +71,12 @@ nav {
       box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
       padding: 40px 0 0 10px;
       transition: 0.3s ease-in-out;
+      z-index: 1;
     }
   
     #navbar.active {
       right: 0px;
+      z-index: 1;
     }
   
     #navbar li {
