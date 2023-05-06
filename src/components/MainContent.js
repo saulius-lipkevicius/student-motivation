@@ -9,8 +9,10 @@ export default function MainContent() {
             <div className='row'>
                 <div className='column-text'>
                     <div className='tab-content'>
-                        <h2 className="item1">Easy feedback ahead</h2>
-                        <p className="item2">NAME is your feedback automation platform for elimination the back-and-forth summarization for finding the perfect info - and so more</p>
+                        <h2 className="item1">Generate Feedback Swiftly</h2>
+                        <p className="item2">
+                            Automate pupil development feedback, eliminate the back-and-forth
+                            information summarization and guide students with new ideas </p>
                     </div>
                     <div class="item4">
                         <form className="form">

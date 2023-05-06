@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import LanguageTopHeader from "../components/LanguageTopHeader"
-import MainContent from "../components/MainContent"
 import ProductUserInput from '../components/ProductUserInput'
 import NavBar from "../components/NavBar";
 
