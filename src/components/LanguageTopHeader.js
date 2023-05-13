@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import headerLogo from "../images/testas.png"
+import headerLogo from "../images/world.png"
 
 export default function LanguageTopHeader({selected, setSelected}) {
     const [isActive, setIsActive] = useState(false);
@@ -9,8 +9,11 @@ export default function LanguageTopHeader({selected, setSelected}) {
             <div className="dropdown">
                 <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}>
                     <img class="btnimg" src={headerLogo} alt="" />
-                    {selected}
-                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="text-arrow">
+                        {selected}
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    
                 </div>
                 {isActive && (
                     <div className="dropdown-content">

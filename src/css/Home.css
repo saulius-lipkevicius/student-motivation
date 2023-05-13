@@ -52,30 +52,45 @@
 
 .language-nav {
     width: 100%;
-    margin: 0px auto;
     display: flex;
     padding: 0px 0px;
     -moz-box-pack: end;
     justify-content: flex-end;
     background-color: rgb(247, 250, 255);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
 }
 
 .dropdown {
-    width: 150px;
-    margin-left: auto;
-    font-size: 12px;
+    width: 200px;
+    padding-top: 7px;
+    font-size: 10px;
     position: relative;
-    text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
+    z-index: 50;
+}
+
+.text-arrow  i {
+	margin: 0px 0;
+	padding: 0 10px;
+	line-height: 20px;
 }
 
 .dropdown .dropdown-btn{
-    font-weight: bold;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    display: inline-block;
+    width: 80%;
+    padding-left: 25px;
     cursor: pointer;
 }
+
+.dropdown .dropdown-btn .fa-solid fa-caret-down{
+    padding-left: 5px;
+}
+
 
 .dropdown .dropdown-content {
     position: absolute;
@@ -85,12 +100,13 @@
     box-shadow: 3px 3px 10px 6px rgba(185, 23, 23, 0.06);
     font-weight: 500;
     color: #333;
-    width: 95%;
+    width: 80%;
 }
 
 .dropdown .dropdown-content .dropdown-item {
-    padding: 10px;
+    padding: 7px;
     transition: 0.2s;
+    
 }
 
 .dropdown .dropdown-content .dropdown-item:hover {
@@ -99,11 +115,10 @@
 
 .btnimg {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    
-    left: 20px;
-    top: 40%;
+    width: 12px;
+    height: 12px;
+    left: 40px;
+    top: 50%;
     transform: translateY(-50%);
   }
 
