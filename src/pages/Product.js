@@ -3,8 +3,7 @@ import ProductUserInput from '../components/ProductUserInput'
 import NavBar from "../components/NavBar";
 import LanguageBar from "../components/LanguageTopHeader"
 
-function Product() {
-    const [selected, setSelected] = useState("English")
+function Product({selected, setSelected}) {
     
     return (
         <div>

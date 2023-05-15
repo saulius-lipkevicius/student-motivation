@@ -3,14 +3,12 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    NavLink,
   } from "react-router-dom";
 
 import Home from '../pages/Home'
 import Product from '../pages/Product'
 import About from '../pages/About'
 
-import { useTranslation } from 'react-i18next';
 
 function App() {
     const [selected, setSelected] = useState("English")
@@ -19,9 +17,9 @@ function App() {
         <div>
             <Router>
                 <Routes>
-                    <Route path="/" element={<Home/>} />
-                    <Route path="/product" element={<Product/>}/>
-                    <Route path="/about" element={<About/>}/>
+                    <Route path="/" element={<Home selected={selected} setSelected={setSelected}/>} />
+                    <Route path="/product" element={<Product selected={selected} setSelected={setSelected}/>}/>
+                    <Route path="/about" element={<About selected={selected} setSelected={setSelected}/>}/>
                 </Routes>
             </Router>
         </div>

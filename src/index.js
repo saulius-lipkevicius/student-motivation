@@ -4,7 +4,7 @@ import App from "./components/App"
 import "./style.css"
 import './fonts/Gilroy-Bold.ttf';
 
-import './i18next.js'
+import './i18n.js'
 
 import * as ServiceWorker from './serviceWorkerRegistration';
 

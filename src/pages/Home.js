@@ -3,8 +3,7 @@ import MainContent from "../components/MainContent"
 import NavBar from "../components/NavBar";
 import LanguageBar from "../components/LanguageTopHeader"
 
-function Home() {
-    const [selected, setSelected] = useState("English")
+function Home({selected, setSelected}) {
     
     return (
             <div>

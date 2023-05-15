@@ -1,15 +1,21 @@
 import React from "react"
 import headerLogo from "../images/homegood.png"
 import style from "../css/Home.css"
+import { useTranslation } from 'react-i18next'
+import i18n from '../i18n.js'
+
 
 export default function MainContent() {
+    const { t, i18next } = useTranslation('translation', { keyPrefix: 'Home' });
+    const text = t('Moto'); // "here"
+    console.log(text);
     return (
 
         <section className='about'>
             <div className='row'>
                 <div className='column-text'>
                     <div className='tab-content'>
-                        <h2 className="item1">Generate Feedback Swiftly</h2>
+                        <h2 className="item1">{text}aaa</h2>
                         <p className="item2">
                             Automate pupil development feedback, eliminate the back-and-forth
                             information summarization and guide students with new ideas </p>
