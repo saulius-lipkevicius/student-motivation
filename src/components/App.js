@@ -10,6 +10,8 @@ import Home from '../pages/Home'
 import Product from '../pages/Product'
 import About from '../pages/About'
 
+import { useTranslation } from 'react-i18next';
+
 function App() {
     const [selected, setSelected] = useState("English")
 
