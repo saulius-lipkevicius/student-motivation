@@ -1,61 +1,55 @@
 import React, { useState } from "react"
 import styles from "../css/ProductUserForms.css"
-
+import { useTranslation } from 'react-i18next'
 
 export default function ProductUserInput() {
     const [topInput, setTopInput] = useState('')
     const [midInput, setMidInput] = useState('')
-    const [lowInput, setLowInput] = useState('mario')
+    const [lowInput, setLowInput] = useState('')
+
+    const { t } = useTranslation('translation', { keyPrefix: 'Product' });
 
     return (
         <div className="create">
-            <h2>Generate students motivation abstract</h2>
+            <h2>{t('Title')}</h2>
             <from>
-                <label>Main motive of text:</label>
+                <label>{t('Motive.Title')}</label>
                 <input
                     type="text"
-                    placeholder="Try 'Achievement letter', 'Motivation analysis', 'Development feedback' ..."
+                    placeholder={t('Motive.Hint')}
                     required
                     onChange={(e) => setTopInput(e.target.value)}
                 />
-                <label>Give us some clues about the student:</label>
+                <label>{t('Clue.Title')}</label>
                 <textarea
                     required
-                    placeholder="Keep in mind key points:
-                                    - What student did well?
-                                    - Did he face problems?
-                                    - How consistent he have been?
-                                    - Set time period you want to describe
-                                
-                        
-                                    Feel free, describe what is most important at the moment.
-                                "
+                    placeholder={t('Clue.Hint')}
                     onChange={(e) => setMidInput(e.target.value)}
                 />
-                <label>How strict you want to sound:</label>
+                <label>{t('Strictness.Title')}</label>
                 <select
                     onChange={(e) => setLowInput(e.target.value)}
                 >
-                    <option value="Strict">Strict</option>
-                    <option value="Neutral">Neutral</option>
-                    <option value="Friendly">Friendly</option>
+                    <option value="Strict">{t('Strictness.Option1')}</option>
+                    <option value="Neutral">{t('Strictness.Option2')}</option>
+                    <option value="Friendly">{t('Strictness.Option3')}</option>
                 </select>
-                <label>Additional information:</label>
+                <label>{t('Info.Title')}</label>
                 <div className="checkbox-grid">
-                    <label class="container">Solutions
+                    <label className="container">{t('Info.Solutions')}
                         <input type="checkbox" />
-                        <span class="checkmark"></span>
+                        <span className="checkmark"></span>
                     </label>
-                    <label class="container">Psychological Suggestions
+                    <label className="container">{t('Info.Suggestion')}
                         <input type="checkbox" />
-                        <span class="checkmark"></span>
+                        <span className="checkmark"></span>
                     </label>
-                    <label class="container">Discussion Plan
+                    <label className="container">{t('Info.Plan')}
                         <input type="checkbox" />
-                        <span class="checkmark"></span>
+                        <span className="checkmark"></span>
                     </label>
                 </div>
-                <button>Finish</button>
+                <button>{t('Button')}</button>
             </from>
         </div>
     )

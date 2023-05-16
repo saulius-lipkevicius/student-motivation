@@ -5,14 +5,14 @@ import i18n from '../i18n.js'
 
 
 export default function LanguageTopHeader({selected, setSelected}) {
+    const { t} = useTranslation('translation', { keyPrefix: 'Nav.LanguageBar' });
+
     const [isActive, setIsActive] = useState(false);
-    const options = ["English", "Lithuanian"]
-    
-    const { t, i18next } = useTranslation('translation', { keyPrefix: 'Nav.LanguageBar' });
-    const text = t('English'); // "here"
+    const options = [t('English'), t('Lithuanian')]
 
     function handleLanguage(lang) {
         i18n.changeLanguage(lang);
+        options.foo = [t('English'), t('Lithuanian')]
     }
 
     return (
@@ -21,7 +21,7 @@ export default function LanguageTopHeader({selected, setSelected}) {
                 <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}>
                     <img className="btnimg" src={headerLogo} alt="" />
                     <div className="text-arrow">
-                        {selected}
+                        {t(selected)}
                         <i className="fa-solid fa-caret-down"></i>
                     </div>
                 </div>
@@ -29,10 +29,9 @@ export default function LanguageTopHeader({selected, setSelected}) {
                     <div className="dropdown-content">
                         {options.map((option) => (
                             <div onClick={(e) => {
-                                setSelected (option) 
                                 setIsActive(false)
-                                
-                                option == 'English' ? handleLanguage('en') : handleLanguage('lt')
+                                setSelected(option) 
+                                option === 'English' || option === 'Anglų' ? handleLanguage('en') : handleLanguage('lt')
                             }
                         }className="dropdown-item">
                         {option} 
