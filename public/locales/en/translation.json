@@ -29,8 +29,8 @@
         },
         "Strictness": {
             "Title": "How strict you want to sound:",
-            "Option1": "Strict",
-            "Option2": "Neutral",
+            "Option1": "Neutral",
+            "Option2": "Strict",
             "Option3": "Friendly"
         },
         "Info": {

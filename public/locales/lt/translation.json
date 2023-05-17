@@ -29,8 +29,8 @@
         },
         "Strictness": {
             "Title": "Kaip griežtai norite skambėti?",
-            "Option1": "Griežtai",
-            "Option2": "Neutraliai",
+            "Option1": "Neutraliai",
+            "Option2": "Griežtai",
             "Option3": "Draugiškai"
         },
         "Info": {
