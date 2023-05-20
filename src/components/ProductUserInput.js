@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react"
 import styles from "../css/ProductUserForms.css"
 import { useTranslation } from 'react-i18next'
 import LoadingButton from "./LoadingButton"
-import Callback from './Callback.js'
-
 
 export default function ProductUserInput() {
     const [topInput, setTopInput] = useState('')
@@ -12,8 +10,6 @@ export default function ProductUserInput() {
     const [situationCheck, setSituationCheck] = useState(false)
     const [psichologyCheck, setPsichologyCheck] = useState(false)
     const [planCheck, setPlanCheck] = useState(false)
-
-    const [isInputFull, setIsInputFull] = useState(true)
 
     const { t } = useTranslation('translation', { keyPrefix: 'Product' });
 
@@ -49,43 +45,33 @@ export default function ProductUserInput() {
                     <label className="container">{t('Info.Solutions')}
                         <input
                             type="checkbox"
-                            onChange={(e) => {
-                                setSituationCheck(!situationCheck)
-                                // check if data input is > 0
-                                e.length === 0 ? setIsInputFull(true) : setIsInputFull(false)
-                            }}
+                            onChange={(e) => setSituationCheck(!situationCheck)}
                         />
                         <span className="checkmark"></span>
                     </label>
                     <label className="container">{t('Info.Suggestion')}
                         <input
                             type="checkbox"
-                            onChange={(e) => {
-                                setPsichologyCheck(!psichologyCheck)
-                                // check if data input is > 0
-                                e.length === 0 && e.length === 0? setIsInputFull(true) : setIsInputFull(false)
-                            }}
+                            onChange={(e) => setPsichologyCheck(!psichologyCheck)}
                         />
                         <span className="checkmark"></span>
                     </label>
                     <label className="container">{t('Info.Plan')}
                         <input
                             type="checkbox"
-                            onChange={(e) => {
-                                setPlanCheck(!planCheck)
-                                // check if data input is > 0
-                                e.length === 0 ? setIsInputFull(true) : setIsInputFull(false)
-                            }}
+                            onChange={(e) => setPlanCheck(!planCheck)}
                         />
                         <span className="checkmark"></span>
                     </label>
                 </div>
                 <LoadingButton loading={loading} onClick={() => {
                     setLoading(true)
-                    
+
+
                     fetch('https://jsonplaceholder.typicode.com/todos/1')
                         .then(response => response.json())
                         .then(json => console.log(json))
+
 
                     /* Time taken by API to send data */
                     setTimeout(() => {
@@ -93,7 +79,6 @@ export default function ProductUserInput() {
                     }, 2000)
                 }} />
             </from>
-            <Callback />
         </div>
     )
 }
