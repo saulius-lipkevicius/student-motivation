@@ -23,6 +23,10 @@
             "Title": "Main motive of text:",
             "Hint": "Try 'Achievement letter', 'Motivation analysis', 'Development feedback' ..."
         },
+        "Past": {
+            "Title": "Past activities:",
+            "Hint": "Was the behaviour different, were there some excidents ..."
+        },
         "Clue": {
             "Title": "Give us some clues about the student:",
             "Hint": "Keep in mind key points:\n- What student did well?\n- Did he face problems?\n- How consistent he have been?\n- Set time period you want to describe\n\n\nFeel free, describe what is most important at the moment."

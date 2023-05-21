@@ -23,6 +23,10 @@
             "Title": "Pagrindinė santraukos motyvacija:",
             "Hint": "Išbandykite „Laiškas apie pasiekimus“, „Motyvacijos analizė“, „Atsiliepimai apie vystymąsi“ ..."
         },
+        "Past": {
+            "Title": "Veikla anksčiau:",
+            "Hint": "Ar mokinys elgėsi kitaip, ar turėjo nutikimų..."
+        },
         "Clue": {
             "Title": "Pateikite keletą užuominų apie mokinį:",
             "Hint": "Atsiminkite pagrindinius dalykus:\n- Kuris mokinys sekėsi gerai?\n- Ar jis susidūrė su problemomis?\n- Ar jis buvo nuoseklus?\n- Nustatykite laikotarpį, kurį norite apibūdinti.\n\n\nNesivaržykite, apibūdinkite kas šiuo metu svarbiausia"

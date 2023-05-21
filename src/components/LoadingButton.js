@@ -1,6 +1,5 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import '../css/LoadingButton.css'
 import Spinner from './spinner.gif';
 
 const LoadingButton = ({ loading, onClick }) => {

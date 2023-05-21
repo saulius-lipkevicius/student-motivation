@@ -3,7 +3,7 @@ export const arrayStrictness = [
       name: "Neutral",
       id: "neutral",
       description: "Answer questions based on existing knowledge",
-      option: {
+      form: {
         model: "text-davinci-003",
         temperature: 0,
         max_tokens: 150,
@@ -16,7 +16,7 @@ export const arrayStrictness = [
       name: "Strict",
       id: "strict",
       description: "Corrects sentences into standard English.",
-      option: {
+      form: {
         model: "text-davinci-003",
         temperature: 0,
         max_tokens: 150,
@@ -29,7 +29,7 @@ export const arrayStrictness = [
       name: "Friendly",
       id: "friendly",
       description: "Translates difficult text into simpler concepts.",
-      option: {
+      form: {
         model: "text-davinci-003",
         temperature: 0,
         max_tokens: 150,
