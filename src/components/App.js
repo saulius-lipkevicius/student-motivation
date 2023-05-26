@@ -15,7 +15,7 @@ function App() {
 
     return (
         <div>
-            <Router basename="/student-motivation">
+            <Router basename="">
                 <Routes>
                     <Route path="/" element={<Home selected={selected} setSelected={setSelected}/>} />
                     <Route path="/product" element={<Product selected={selected} setSelected={setSelected}/>}/>

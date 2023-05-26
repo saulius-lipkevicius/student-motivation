@@ -1,0 +1,62 @@
+{
+    "Nav": {
+        "Home": "Home",
+        "Product": "Product",
+        "About": "About",
+        "LanguageBar": {
+            "English": "English",
+            "Lithuanian": "Lithuanian",
+            "Anglų": "English",
+            "Lietuvių": "Lithuanian"
+        }
+    },
+    "Home": {
+        "Moto": "Generate Feedback Swiftly",
+        "Description": "Automate pupil development feedback, eliminate the back-and-forth information summarization and guide students with new ideas",
+        "Email": "Enter your email",
+        "Button": "Submit",
+        "Notice": "We will let you know when product advances"
+    },
+    "Product": {
+        "Title": "Generate students motivation",
+        "Motive": {
+            "Title": "Main motive of text:",
+            "Hint": "Try 'Achievement letter', 'Motivation analysis', 'Development feedback' ..."
+        },
+        "Past": {
+            "Title": "Past activities:",
+            "Hint": "Was the behaviour different, were there some excidents ..."
+        },
+        "Clue": {
+            "Title": "Give us some clues about the student:",
+            "Hint": "Keep in mind key points:\n- What student did well?\n- Did he face problems?\n- How consistent he have been?\n- Set time period you want to describe\n\n\nFeel free, describe what is most important at the moment."
+        },
+        "Strictness": {
+            "Title": "How strict you want to sound:",
+            "Option1": "Neutral",
+            "Option2": "Strict",
+            "Option3": "Friendly"
+        },
+        "Info": {
+            "Title": "Additional information:",
+            "Solutions": "Solutions",
+            "Suggestion": "Psychological Suggestions",
+            "Plan": "Discussion Plan"
+        },
+        "Button": "Submit"
+    },
+    "About": {
+        "About": {
+            "Title": "About",
+            "Text": "This is Beta version. Check out for new features soon."
+        },
+        "Idea": {
+            "Title": "Idea",
+            "Text": "Website is created for students and teachers to collaborate to generate short, concise abstracts about studying problems and development. Our platform is designed to promote learning and foster creativity by providing ideas and insights that would take long time to research for a teacher himself. However, be careful and always double check information that is given to you, every case is different."
+        },
+        "Contacts": {
+            "Title": "Contacts",
+            "Text": "Email to reach out: saulius43@gmail.com"
+        } 
+    }
+}
