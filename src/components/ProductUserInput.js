@@ -8,10 +8,11 @@ import { Configuration, OpenAIApi } from "openai";
 import { arrayStrictness } from "../AIOptions/index.js";
 import { Button } from "@mui/material"
 import i18n from 'i18next';
+import api_key from config
 
 export default function ProductUserInput() {
     const configuration = new Configuration({
-        apiKey: "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",
+        apiKey: api_key,
     });
     const openai = new OpenAIApi(configuration);
 
