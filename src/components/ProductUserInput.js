@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import styles from "../css/ProductUserForms.css"
 import { useTranslation } from 'react-i18next'
 import LoadingButton from "./LoadingButton"
@@ -7,7 +7,7 @@ import Callback from './Callback.js'
 import { Configuration, OpenAIApi } from "openai";
 import { arrayStrictness } from "../AIOptions/index.js";
 import { Button } from "@mui/material"
-
+import i18n from 'i18next';
 
 export default function ProductUserInput() {
     const configuration = new Configuration({
@@ -39,21 +39,34 @@ export default function ProductUserInput() {
 
     const [result, setResult] = useState("")
     const doStuff = async () => {
-        let outputTypes = ['Solution to problems', 'Psychological suggestions', 'Plan for discussion with students parents about students development and information given above']
         let finalTypes = []
-        if (situationCheck) {finalTypes.push(outputTypes[0])}
-        if (psychologyCheck) {finalTypes.push(outputTypes[1])}
-        if (planCheck) {finalTypes.push(outputTypes[2])}
+        let input = ""
+        if (i18n.languages[0] === 'en') {
+            
+            let outputTypes = ['Solution to problems and how teacher and parents could help'
+                                , 'also suggest some psychological trick that could be helpful for teacher or parents to deal with his problems'
+                                , 'write small discussion plan how to present this information to parents']
+            
+            if (situationCheck) {finalTypes.push(outputTypes[0])}
+            if (psychologyCheck) {finalTypes.push(outputTypes[1])}
+            if (planCheck) {finalTypes.push(outputTypes[2])}
 
-        let input = "you are a very intelligent, qualified and accountable teacher. You are interested in psychology, \
-         student development and their problems at school. You must analyze a student about whom you know the following: " + currentInput + " \
-         In the past student was: " + pastInput + " \
-         Style should be " + motiveInput + " \
-         Emotion: be " + strictnessInput + " teacher, and imagine you have to report everything to other teacher who will deal with the information and translate it to parents of child. \
-         Generate: summary of the text given above, " + finalTypes.join(',')
-
+            input = "You are very intelligent, qualified and accountable teacher, who reads psychology literature and is keen of applying it to his analysis on students development \
+            report. You have to write a small summary for parents about their child in elementary school at the end of year. You have this information: \
+            In the past, student was - : " + pastInput + " \
+            This semester, student was - : " + currentInput + " \
+            Writing style should be as " + motiveInput + " \
+            Emotion: " + strictnessInput + " \
+            Write small summary of information about student given above, \
+            More over, write small discussion plan how to present this information to parents. \
+            " + finalTypes.join(',') + ". Style, where needed, use bullet points to make more clear message"
+        } else {
+            let outputTypes = "translate this text to english, and keep english words as it was, only translate that are lithuanian. \
+            Also, exclude lithuanian words. In the final output give me only the sentence I want to translate"
+            }
+        
         let object = { ...option.form, prompt: input };
-        console.log(finalTypes.join(','))
+       
         const response = await openai.createCompletion(object);
 
         setLoading(false)
@@ -148,7 +161,7 @@ export default function ProductUserInput() {
             </from>
             }
             <div className='buttons'>
-                {result.length == 0 &&                
+                {result.length === 0 &&                
                 <LoadingButton loading={loading} onClick={() => {
                     setLoading(true)
                     doStuff()
