@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/student-motivation/precache-manifest.bf0bf6989e16a87c7ab27992277ef4b0.js"
+  "/student-motivation/precache-manifest.d02d0a33205317289e90c9d6ea6d4ee1.js"
 );
 
 workbox.clientsClaim();
