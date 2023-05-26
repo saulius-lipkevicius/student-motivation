@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5a8ea0d4ae09e585f4c2",
+    "revision": "ae1ff84fd097dd5da81d",
     "url": "/student-motivation/static/css/main.b6f7e1b5.chunk.css"
   },
   {
-    "revision": "5a8ea0d4ae09e585f4c2",
-    "url": "/student-motivation/static/js/main.cef4a203.chunk.js"
+    "revision": "ae1ff84fd097dd5da81d",
+    "url": "/student-motivation/static/js/main.0dc4e73e.chunk.js"
   },
   {
     "revision": "1c0c739516904d9851ac",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/student-motivation/static/media/Gilroy-Bold.b381c2ab.ttf"
   },
   {
-    "revision": "730680d0e621320d2f9cdb85716b23c8",
+    "revision": "cde1cf39e9c0b9f6239252dcaffd084d",
     "url": "/student-motivation/index.html"
   }
 ];
