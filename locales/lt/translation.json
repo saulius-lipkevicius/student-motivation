@@ -1,0 +1,62 @@
+{
+    "Nav": {
+        "Home": "Namai",
+        "Product": "Programa",
+        "About": "Apie",
+        "LanguageBar": {
+            "English": "Anglų",
+            "Lithuanian": "Lietuvių",
+            "Anglų": "Anglų",
+            "Lietuvių": "Lietuvių"
+        }
+    },
+    "Home": {
+        "Moto": "Sugeneruok Grįžtamąjį Ryšį Greitai",
+        "Description": "Automatizuokite grįžtamąjį ryšį su mokinių raida, pašalinkite tiesioginį informacijos apibendrinimą ir nukreipkite studentus į naujas idėjas",
+        "Email": "Įveskite savo el. paštą",
+        "Button": "Tęsti",
+        "Notice": "Mes jus informuosime, kai produktas bus tobulinamas"
+    },
+    "Product": {
+        "Title": "Sukurkite studentų motyvacijos santrauką",
+        "Motive": {
+            "Title": "Pagrindinė santraukos motyvacija:",
+            "Hint": "Išbandykite „Laiškas apie pasiekimus“, „Motyvacijos analizė“, „Atsiliepimai apie vystymąsi“ ..."
+        },
+        "Past": {
+            "Title": "Veikla anksčiau:",
+            "Hint": "Ar mokinys elgėsi kitaip, ar turėjo nutikimų..."
+        },
+        "Clue": {
+            "Title": "Pateikite keletą užuominų apie mokinį:",
+            "Hint": "Atsiminkite pagrindinius dalykus:\n- Kuris mokinys sekėsi gerai?\n- Ar jis susidūrė su problemomis?\n- Ar jis buvo nuoseklus?\n- Nustatykite laikotarpį, kurį norite apibūdinti.\n\n\nNesivaržykite, apibūdinkite kas šiuo metu svarbiausia"
+        },
+        "Strictness": {
+            "Title": "Kaip griežtai norite skambėti?",
+            "Option1": "Neutraliai",
+            "Option2": "Griežtai",
+            "Option3": "Draugiškai"
+        },
+        "Info": {
+            "Title": "Ar reikia papildomos informacijos?",
+            "Solutions": "Situacjos sprendimas",
+            "Suggestion": "Psichologinė padėtis",
+            "Plan": "Aptarimo planas"
+        },
+        "Button": "Tęsti"
+    },
+    "About": {
+        "About": {
+            "Title": "Apie",
+            "Text": "Tai yra beta versija. Netrukus atsiras naujos funkcijos."
+        },
+        "Idea": {
+            "Title": "Idėja",
+            "Text": "Svetainė sukurta tam, kad studentai ir mokytojai galėtų bendradarbiauti, kad būtų sukurtos trumpos, glaustos tezės apie problemų studijas ir tobulėjimą. Mūsų platforma skirta skatinti mokymąsi ir ugdyti kūrybiškumą, suteikiant idėjų ir įžvalgų, kurių tyrinėjimas pačiam mokytojui užtruktų ilgai. Tačiau būkite atsargūs ir visada dar kartą patikrinkite jums pateiktą informaciją, kiekvienas atvejis yra skirtingas."
+        },
+        "Contacts": {
+            "Title": "Kontaktai",
+            "Text": "El. paštas susisiekti: saulius43@gmail.com"
+        } 
+    }
+}

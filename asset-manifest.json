@@ -1,0 +1,20 @@
+{
+  "main.css": "/student-motivation/static/css/main.b6f7e1b5.chunk.css",
+  "main.js": "/student-motivation/static/js/main.31df231b.chunk.js",
+  "main.js.map": "/student-motivation/static/js/main.31df231b.chunk.js.map",
+  "runtime~main.js": "/student-motivation/static/js/runtime~main.2efd9474.js",
+  "runtime~main.js.map": "/student-motivation/static/js/runtime~main.2efd9474.js.map",
+  "static/js/2.a758709f.chunk.js": "/student-motivation/static/js/2.a758709f.chunk.js",
+  "static/js/2.a758709f.chunk.js.map": "/student-motivation/static/js/2.a758709f.chunk.js.map",
+  "index.html": "/student-motivation/index.html",
+  "precache-manifest.7003977a585686cb0f963e7f49f46265.js": "/student-motivation/precache-manifest.7003977a585686cb0f963e7f49f46265.js",
+  "service-worker.js": "/student-motivation/service-worker.js",
+  "static/css/main.b6f7e1b5.chunk.css.map": "/student-motivation/static/css/main.b6f7e1b5.chunk.css.map",
+  "static/media/Gilroy-Bold.ttf": "/student-motivation/static/media/Gilroy-Bold.b381c2ab.ttf",
+  "static/media/about-1.jpg": "/student-motivation/static/media/about-1.3b3ad3e3.jpg",
+  "static/media/getFetch.cjs": "/student-motivation/static/media/getFetch.2b2b7da4.cjs",
+  "static/media/homegood.png": "/student-motivation/static/media/homegood.e08cb425.png",
+  "static/media/logo2.png": "/student-motivation/static/media/logo2.8d64291e.png",
+  "static/media/spinner.gif": "/student-motivation/static/media/spinner.0394ee0e.gif",
+  "static/media/world.png": "/student-motivation/static/media/world.b8443796.png"
+}
